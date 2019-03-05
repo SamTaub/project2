@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- My styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Potato Head</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Trophy Room</a></li>
+                <li><a href="badges.html">Trades</a></li>
+                <li><a href="badges.html">Sign In</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">More<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        
+    <div id="menu">
+        <div class="hats"><img data-part="hat" id="dropme1st" class="item" src="images/potato head hat.png" alt="hat" draggable="true" ondragstart="drag(event)"></div>
+        <div class="glasses"><img data-part="glasses" id="dropme2nd" class="item" src="images/potato head glasses.png" alt="glass" draggable="true" ondragstart="drag(event)"></div> 
+        <div class="tounges"><img data-part="tounge" id="dropme3rd" class="item" src="images/potato head tounge.png" alt="tounge" draggable="true" ondragstart="drag(event)"></div>
+        <div class="background"><img id="dropme4th" class="item" src="images/disney2.jpg" alt="background" draggable="true" ondragstart="drag(event)"></div>
+    </div>
+
+    <div class="wrapper">
+        <img id="background"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/3e1fa912-3b02-4ea1-bb7c-162cd2eecaf6/d5fq3ql-6d1b22b4-812f-461d-92c1-95076ddbc59e.jpg/v1/fill/w_894,h_894,q_70,strp/toy_story_background_by_lepercqj_d5fq3ql-pre.jpg"
+            alt="background">
+        <img data-part="hat" class="wearing wearing1" src="images/potato head hat.png" alt="hat" hidden>
+        <img data-part="glasses" class="wearing wearing2" src="images/potato head glasses.png" alt="glasses" hidden>
+        <img data-part="tounge" class="wearing wearing3" src="images/potato head tounge.png" alt="tounge" hidden>
+        <img id="potato" src="images/potato head full.png" alt="potato head" ondragover="allowDrop(event)" ondrop="drop(event)">
+    </div>
+    <script src="app.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+/* MENU AND ITEMS */
+#menu {
+    position: absolute;
+    margin-top: 20px;
+    height: 400px;
+    width: 100px;
+}
+
+.hats,
+.glasses,
+.tounges,
+.background {
+    position: relative;
+    border: 6px solid #ee6e73;
+    height: 80px;
+    width: 80px;
+    z-index: 3;
+}
+
+.item {
+    /* position: relative; */
+    height: 80px;
+    width: 80px;
+    z-index: 3;
+}
+
+/* BACKGROUND WILL BE CHANGEABLE */
+#background {
+    position: relative;
+    left: 600px;
+    margin-top: 20px;
+    height: 620px;
+    z-index: -3;
+}
+
+/* POTATO IS JUST THE TEMPLATE FOR THE FUNCO POP */
+#potato {
+    position: absolute;
+    margin-top: 150px;
+    left: 650px;
+    z-index: 1;
+}
+
+/* THE WEARABLE ITEMS WILL BE HOWEVER MANY WE NEED  */
+.wearing1 {
+    position: absolute;
+    margin-top: 50px;
+    left: 648px;
+    top: -28px;
+    z-index: 3;
+}
+.wearing2 {
+    position: absolute;
+    margin-top: 50px;
+    left: 678px;
+    top: 7px;
+    z-index: 3;
+}
+.wearing3 {
+    position: absolute;
+    margin-top: 50px;
+    left: 653px;
+    top: 158px;
+    z-index: 3;
+}
+
