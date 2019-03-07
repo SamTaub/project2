@@ -2,9 +2,9 @@
   "development": {
     "username": "root",
 
-    "password": null,
+    "password": "ExcuseBarrel12",
 
-    "database": "exampledb",
+    "database": "toys_db",
     "host": "localhost",
     "dialect": "mysql"
   },
