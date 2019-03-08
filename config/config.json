@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "yourRootPassword",
-    "database": "toys_db",
+    "database": "funko_db",
     "host": "localhost",
     "dialect": "mysql"
   },

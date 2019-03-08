@@ -25,8 +25,11 @@ module.exports = function(app) {
       res.redirect(307, "/api/login");
     }).catch(function(err) {
       console.log(err);
-      res.json(err);
-      // res.status(422).json(err.errors[0].message);
+      // res.json(err);
+      // res.redirect(500, "/api/signup");
+      res.status(422).json(err.errors[0].message);
+      // throw err(`Duplicate `)
+
     });
   });
 
@@ -34,6 +37,13 @@ module.exports = function(app) {
   app.get("/logout", function(req, res) {
     req.logout();
     res.redirect("/");
+  });
+
+  app.get("/api/users/", function(req, res) {
+    db.User.findAll({})
+      .then(function(dbUser) {
+        res.json(dbUser);
+      });
   });
 
   // Route for getting some data about our user to be used client side
@@ -51,6 +61,35 @@ module.exports = function(app) {
       });
     }
   });
+
+  app.get("/api/users/", function(req, res) {
+    db.User.findAll({})
+      .then(function(dbUser) {
+        res.json(dbUser);
+      });
+  });
+
+  app.delete("/api/users/:id", function(req, res) {
+    db.User.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+      .then(function(dbUser) {
+        res.json(User);
+      });
+  });
+
+
+  // app.get("/api/users", function(req, res) {
+  //   res.json(users);
+  // });
+
+  // app.post("/api/friends", function(req, res) {
+      
+  //   var newUser = req.body;
+
+  // });
 
 };
 

@@ -12,8 +12,6 @@ module.exports = function (app){
     // res.sendFile(path.join(__dirname, "../views/index.html"));
   });
 
-  //Add future routes here:
-
   app.get("/login", function(req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
@@ -26,6 +24,10 @@ module.exports = function (app){
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/create", isAuthenticated, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/create.html"));
+  });
+
+  app.get("/users", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/users.html"));
   });
 
 
