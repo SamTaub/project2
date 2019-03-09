@@ -11,7 +11,8 @@ let activeItem;
 let myFunko = {
   head: null,
   torso: null,
-  legs: null
+  legs: null,
+  background: null
 }
 
 // This function prevents the drop default 
@@ -30,6 +31,7 @@ function drag(ev) {
   // this shows the source location of dragable items
   droppedItem = ev.target;
   activeItem = ev.target.id;
+  // write logic including limbs for on drop function
   // if(limbs === "head"){
   //   myFunko.head = ev.srcElement.src
   // } else if(limbs === "torso"){
@@ -59,7 +61,7 @@ function drop(ev) {
     .append(droppedItem);
   $("#" + activeItem).draggable();  
   console.log(myFunko);
-  
+  console.log(ev);
 }
 
 // They all need uniqe "data-parts" and a uniqe "ids" to work
