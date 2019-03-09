@@ -57,7 +57,7 @@ function drop(ev) {
     .style = "position:fixed; top:400px; height:700px; width:700px;";
   }
 
-  document.querySelector(".dropArea")
+  document.querySelector(".wrapper")
     .append(droppedItem);
   $("#" + activeItem).draggable();  
   console.log(myFunko);
