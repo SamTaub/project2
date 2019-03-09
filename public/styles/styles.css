@@ -1,17 +1,15 @@
-
 .carousel-item{
   height: 200px;
   width: 200px;
 } 
 .carousel-item img{
-  height: 400px;
-  width:400px;
+  height: 200px;
+  width:200px;
+  
 }
 #background{
   background-image: url("https://i.stack.imgur.com/Q33C1.gif");
   height: 100vh;
-  z-index: -3;
-  position: relative;
   /* url("https://images.pexels.com/photos/16516/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")  */
 }
 .font1{
@@ -35,15 +33,4 @@
   50%{    color: transparent; }
   99%{    color:red;  }
   100%{   color:red;text-shadow: 2px 2px 8px rgb(241, 234, 234); }
-}
-
-/* THIS WILL CENTER THE ITEMS IN THE MENU BUT EFFECT THE DROPPED ITEMS */
-.head,
-.torso,
-.legs {
-  /* position: fixed; */
-  margin-top: -100px;
-  margin-left: -100px;
-  width: 100px;
-  height: 100px;
 }
