@@ -23,6 +23,7 @@
   height: 100px;
   margin:95%;
   padding:10%;
+  z-index: -3;
 }
 .blinking{
   animation:blinkingText 6s infinite;
