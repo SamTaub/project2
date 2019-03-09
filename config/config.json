@@ -2,7 +2,8 @@
   "development": {
     "username": "root",
 
-    "password": "back8987",
+    "password": "null",
+
 
     "database": "toys_db",
     "host": "localhost",
