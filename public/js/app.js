@@ -30,13 +30,13 @@ function drag(ev) {
   // this shows the source location of dragable items
   droppedItem = ev.target;
   activeItem = ev.target.id;
-  if(limbs === "head"){
-    myFunko.head = ev.srcElement.src
-  } else if(limbs === "torso"){
-    myFunko.torso = ev.srcElement.src
-  } else if(limbs === "legs"){
-    myFunko.legs = ev.srcElement.src
-  }
+  // if(limbs === "head"){
+  //   myFunko.head = ev.srcElement.src
+  // } else if(limbs === "torso"){
+  //   myFunko.torso = ev.srcElement.src
+  // } else if(limbs === "legs"){
+  //   myFunko.legs = ev.srcElement.src
+  // }
 }
 
 // This function uses the "data-type" to grab the class name of the image,
@@ -62,5 +62,4 @@ function drop(ev) {
   
 }
 
-// Need to cropped images
 // They all need uniqe "data-parts" and a uniqe "ids" to work
