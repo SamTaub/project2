@@ -2,16 +2,16 @@
   "development": {
     "username": "root",
 
-    "password": null,
+    "password": "back8987",
 
-    "database": "exampledb",
+    "database": "toys_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
 
-    "password": null,
+    "password": "back8987",
 
     "database": "testdb",
     "host": "localhost",
