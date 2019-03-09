@@ -20,6 +20,15 @@ module.exports = function (app){
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
+  // RECENTLY ADDED SECURITY.HTML
+  app.get("/security", function(req, res) {
+    // If the user already has an account send them to the members page
+    if (req.user) {
+      res.redirect("/create");
+    }
+    res.sendFile(path.join(__dirname, "../public/security.html"));
+  });
+
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/create", isAuthenticated, function(req, res) {
